@@ -1,0 +1,16 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+
+<style>
+  .gallery .gallery-item {
+    width: calc(100% / {items});
+  }
+
+  .gallery .gallery-item:nth-of-type({items}n + 1) {
+    clear: left;
+  }
+</style>
+
+<div class="gallery">
+  {galleryCollection -> f:format.raw()}
+  <div class="clearfix"></div>
+</div>

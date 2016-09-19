@@ -1,0 +1,37 @@
+@import 'swipebox.scss';
+
+.gallery {
+  margin: 0 -15px;
+
+  .gallery-item {
+    float: left;
+    padding: 0 15px 30px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    figcaption span {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .clearfix {
+    clear: both;
+  }
+}
+
+#swipebox-slider {
+  .slide-loading {
+    background: url(../Images/loader.gif) no-repeat center center;
+  }
+}
+
+#swipebox-prev,
+#swipebox-next,
+#swipebox-close {
+	background-image: url(../Images/icons.png);
+}

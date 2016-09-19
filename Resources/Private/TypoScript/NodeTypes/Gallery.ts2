@@ -1,0 +1,13 @@
+prototype(ObisConcept.NeosGallery:Gallery) < prototype(TYPO3.Neos:Content) {
+
+		galleryCollection = ContentCollection {
+			nodePath = 'galleryCollection'
+		}
+
+}
+
+prototype(ObisConcept.NeosGallery:GalleryItem) < prototype(TYPO3.Neos:Content) {
+
+  parentIdentifier = ${q(node).closest('[instanceof ObisConcept.NeosGallery:Gallery]').property('_identifier')}
+
+}

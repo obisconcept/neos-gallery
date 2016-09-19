@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file original="" product-name="ObisConcept.NeosGallery" source-language="en" datatype="plaintext" target-language="de">
+		<body>
+      <trans-unit id="ui.label" xml:space="preserve">
+        <source>Gallery item</source>
+        <target xml:lang="de" state="translated">Galerieelement</target>
+      </trans-unit>
+      <trans-unit id="groups.properties" xml:space="preserve">
+        <source>Properties</source>
+        <target xml:lang="de" state="translated">Eigenschaften</target>
+      </trans-unit>
+      <trans-unit id="properties.image" xml:space="preserve">
+        <source>Image</source>
+        <target xml:lang="de" state="translated">Bild</target>
+      </trans-unit>
+      <trans-unit id="properties.title" xml:space="preserve">
+        <source>Caption</source>
+        <target xml:lang="de" state="translated">Bildunterschrift</target>
+      </trans-unit>
+		</body>
+	</file>
+</xliff>

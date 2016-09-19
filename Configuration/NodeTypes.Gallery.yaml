@@ -1,0 +1,90 @@
+'ObisConcept.NeosGallery:Gallery':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  childNodes:
+    'galleryCollection':
+      type: 'ObisConcept.NeosGallery:GalleryCollection'
+  ui:
+    label: i18n
+    icon: 'fa fa-th-large'
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        'properties':
+          label: i18n
+          position: 10
+          icon: 'fa fa-cog'
+  properties:
+    'items':
+      type: integer
+      defaultValue: 4
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              1:
+                label: '1'
+              2:
+                label: '2'
+              3:
+                label: '3'
+              4:
+                label: '4'
+              5:
+                label: '5'
+              6:
+                label: '6'
+              7:
+                label: '7'
+              8:
+                label: '8'
+              9:
+                label: '9'
+              10:
+                label: '10'
+
+'ObisConcept.NeosGallery:GalleryCollection':
+  superTypes:
+    'TYPO3.Neos:ContentCollection': TRUE
+  constraints:
+    nodeTypes:
+      '*': FALSE
+      'TYPO3.Neos.NodeTypes:Form': FALSE
+      'ObisConcept.NeosAjaxForm:AjaxForm': FALSE
+      'ObisConcept.NeosGallery:GalleryItem': TRUE
+  childNodes:
+    galleryItemOne:
+      type: 'ObisConcept.NeosGallery:GalleryItem'
+
+'ObisConcept.NeosGallery:GalleryItem':
+  superTypes:
+    'TYPO3.Neos:Content': TRUE
+  ui:
+    label: i18n
+    icon: 'fa fa-picture-o'
+    inlineEditable: TRUE
+    inspector:
+      groups:
+        'properties':
+          label: i18n
+          position: 10
+          icon: 'fa fa-cog'
+  properties:
+    'image':
+      type: 'TYPO3\Media\Domain\Model\ImageInterface'
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+    'title':
+      type: string
+      ui:
+        label: i18n
+        inlineEditable: TRUE
+        inspector:
+          group: 'properties'
