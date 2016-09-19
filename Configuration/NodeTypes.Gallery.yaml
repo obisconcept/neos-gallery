@@ -15,7 +15,100 @@
           position: 10
           icon: 'fa fa-cog'
   properties:
-    'items':
+    'itemsXs':
+      type: integer
+      defaultValue: 1
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              1:
+                label: '1'
+              2:
+                label: '2'
+              3:
+                label: '3'
+              4:
+                label: '4'
+              5:
+                label: '5'
+              6:
+                label: '6'
+              7:
+                label: '7'
+              8:
+                label: '8'
+              9:
+                label: '9'
+              10:
+                label: '10'
+    'itemsSm':
+      type: integer
+      defaultValue: 2
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              1:
+                label: '1'
+              2:
+                label: '2'
+              3:
+                label: '3'
+              4:
+                label: '4'
+              5:
+                label: '5'
+              6:
+                label: '6'
+              7:
+                label: '7'
+              8:
+                label: '8'
+              9:
+                label: '9'
+              10:
+                label: '10'
+    'itemsMd':
+      type: integer
+      defaultValue: 3
+      ui:
+        label: i18n
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'properties'
+          editor: 'TYPO3.Neos/Inspector/Editors/SelectBoxEditor'
+          editorOptions:
+            values:
+              1:
+                label: '1'
+              2:
+                label: '2'
+              3:
+                label: '3'
+              4:
+                label: '4'
+              5:
+                label: '5'
+              6:
+                label: '6'
+              7:
+                label: '7'
+              8:
+                label: '8'
+              9:
+                label: '9'
+              10:
+                label: '10'
+    'itemsLg':
       type: integer
       defaultValue: 4
       ui:

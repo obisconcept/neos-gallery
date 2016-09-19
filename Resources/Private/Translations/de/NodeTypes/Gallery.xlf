@@ -10,9 +10,21 @@
         <source>Properties</source>
         <target xml:lang="de" state="translated">Eigenschaften</target>
       </trans-unit>
-      <trans-unit id="properties.items" xml:space="preserve">
-        <source>Items per row</source>
-        <target xml:lang="de" state="translated">Elemente pro Zeile</target>
+			<trans-unit id="properties.itemsXs" xml:space="preserve">
+        <source>Items per row (Phones)</source>
+        <target xml:lang="de" state="translated">Elemente pro Zeile (Smartphones)</target>
+      </trans-unit>
+			<trans-unit id="properties.itemsSm" xml:space="preserve">
+        <source>Items per row (Tablet portrait)</source>
+        <target xml:lang="de" state="translated">Elemente pro Zeile (Tablet hochkant)</target>
+      </trans-unit>
+			<trans-unit id="properties.itemsMd" xml:space="preserve">
+        <source>Items per row (Tablet widescreen)</source>
+        <target xml:lang="de" state="translated">Elemente pro Zeile (Tablet quer)</target>
+      </trans-unit>
+			<trans-unit id="properties.itemsLg" xml:space="preserve">
+        <source>Items per row (Desktop)</source>
+        <target xml:lang="de" state="translated">Elemente pro Zeile (Desktop)</target>
       </trans-unit>
 		</body>
 	</file>

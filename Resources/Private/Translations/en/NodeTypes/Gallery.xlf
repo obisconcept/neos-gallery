@@ -8,8 +8,17 @@
 			<trans-unit id="groups.properties" xml:space="preserve">
         <source>Properties</source>
       </trans-unit>
-      <trans-unit id="properties.items" xml:space="preserve">
-        <source>Items per row</source>
+			<trans-unit id="properties.itemsXs" xml:space="preserve">
+        <source>Items per row (Phones)</source>
+      </trans-unit>
+			<trans-unit id="properties.itemsSm" xml:space="preserve">
+        <source>Items per row (Tablet portrait)</source>
+      </trans-unit>
+			<trans-unit id="properties.itemsMd" xml:space="preserve">
+        <source>Items per row (Tablet widescreen)</source>
+      </trans-unit>
+			<trans-unit id="properties.itemsLg" xml:space="preserve">
+        <source>Items per row (Desktop)</source>
       </trans-unit>
 		</body>
 	</file>

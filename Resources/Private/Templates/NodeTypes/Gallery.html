@@ -2,11 +2,56 @@
 
 <style>
   .gallery .gallery-item {
-    width: calc(100% / {items});
+    width: calc(100% / {itemsXs});
   }
 
-  .gallery .gallery-item:nth-of-type({items}n + 1) {
+  .gallery .gallery-item:nth-of-type({itemsXs}n + 1) {
     clear: left;
+  }
+
+  @media (min-width: 768px) {
+    .gallery .gallery-item {
+      width: calc(100% / {itemsSm});
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsXs}n + 1) {
+      clear: none;
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsSm}n + 1) {
+      clear: left;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .gallery .gallery-item {
+      width: calc(100% / {itemsMd});
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsXs}n + 1),
+    .gallery .gallery-item:nth-of-type({itemsSm}n + 1) {
+      clear: none;
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsMd}n + 1) {
+      clear: left;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .gallery .gallery-item {
+      width: calc(100% / {itemsLg});
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsXs}n + 1),
+    .gallery .gallery-item:nth-of-type({itemsSm}n + 1),
+    .gallery .gallery-item:nth-of-type({itemsMd}n + 1) {
+      clear: none;
+    }
+
+    .gallery .gallery-item:nth-of-type({itemsLg}n + 1) {
+      clear: left;
+    }
   }
 </style>
 
