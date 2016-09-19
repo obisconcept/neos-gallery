@@ -9,16 +9,16 @@
         <source>Properties</source>
       </trans-unit>
 			<trans-unit id="properties.itemsXs" xml:space="preserve">
-        <source>Items per row (Phones)</source>
+        <source>Items per row on phones</source>
       </trans-unit>
 			<trans-unit id="properties.itemsSm" xml:space="preserve">
-        <source>Items per row (Tablet portrait)</source>
+        <source>Items per row on tablets portrait</source>
       </trans-unit>
 			<trans-unit id="properties.itemsMd" xml:space="preserve">
-        <source>Items per row (Tablet widescreen)</source>
+        <source>Items per row on tablets widescreen</source>
       </trans-unit>
 			<trans-unit id="properties.itemsLg" xml:space="preserve">
-        <source>Items per row (Desktop)</source>
+        <source>Items per row on desktops</source>
       </trans-unit>
 		</body>
 	</file>
