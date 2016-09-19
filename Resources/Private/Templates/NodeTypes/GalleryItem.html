@@ -4,7 +4,14 @@
 <figure class="gallery-item">
   <f:if condition="{neos:rendering.live()}">
     <f:then>
-      <a href="{media:uri.image(image: image)}" class="swipebox" rel="{parentIdentifier}-gallery" title="{title}">
+      <f:if condition="{image}">
+        <f:then>
+          <a href="{media:uri.image(image: image)}" class="swipebox" rel="{parentIdentifier}-gallery" title="{title}">
+        </f:then>
+        <f:else>
+          <a>
+        </f:else>
+      </f:if>
     </f:then>
     <f:else>
       <a>
