@@ -25,18 +25,6 @@ prototype(TYPO3.Neos:Page) {
             }
         }
 
-        galleryBackendJs = TYPO3.TypoScript:Tag {
-            @position = 'after javascripts'
-            tagName = 'script'
-            attributes {
-                type = 'text/javascript'
-                src = TYPO3.TypoScript:ResourceUri {
-                    path = 'resource://ObisConcept.NeosGallery/Public/JavaScript/backend.min.js'
-                }
-            }
-            @if.onlyRenderWhenNotInLiveWorkspace = ${node.context.workspace.name != 'live'}
-        }
-
     }
 
 }
