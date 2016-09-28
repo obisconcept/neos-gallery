@@ -9,7 +9,7 @@ Add the package in your site package composer.json
 
 ```
 "require": {
-     "obisconcept/neos-gallery": "~1.0"
+     "obisconcept/neos-gallery": "~1.0.0"
  }
  ```
 
