@@ -1,10 +1,11 @@
-TYPO3:
-  Neos:
-    typoScript:
-      autoInclude:
-        'ObisConcept.NeosGallery': TRUE
 
+Neos:
+  Neos:
     userInterface:
       translation:
         autoInclude:
-          'ObisConcept.NeosGallery': ['NodeTypes/*']
+          ObisConcept.NeosGallery:
+            - 'NodeTypes/*'
+    fusion:
+      autoInclude:
+        ObisConcept.NeosGallery: true
