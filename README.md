@@ -1,5 +1,5 @@
 # neos-gallery
-A Neos CMS package with a gallery node type for NEOS 3.0
+A Neos CMS package with a gallery node type
 
 ## Packages
 - Swipebox 1.4.4
