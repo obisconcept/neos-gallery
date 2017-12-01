@@ -3240,8 +3240,6 @@
 
 }( jQuery ));
 
-$(document).ready(function() {
-  if ($('.swipebox').length) {
-    $('.swipebox').swipebox();
-  }
-});
+$(function() {
+  if($('.zoombox').length && !window.surpressGalleryInit) $('.zoombox').zoombox();
+})
