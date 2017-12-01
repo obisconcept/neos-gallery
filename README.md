@@ -2,14 +2,14 @@
 A Neos CMS package with a gallery node type
 
 ## Packages
-- Swipebox 1.4.4
+- [ZoomBox.js v1](https://github.com/MCStreetguy/ZoomBox.js/)
 
 ## Installation
 Add the package in your site package composer.json
 
 ```
 "require": {
-     "obisconcept/neos-gallery": "~2.0.0"
+     "obisconcept/neos-gallery": "~3.0.0"
  }
  ```
 

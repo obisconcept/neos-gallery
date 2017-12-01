@@ -1,13 +1,47 @@
 prototype(ObisConcept.NeosGallery:Gallery) < prototype(Neos.Neos:Content) {
 
-		galleryCollection = ContentCollection {
-			nodePath = 'galleryCollection'
-		}
+	galleryCollection = ContentCollection {
+		nodePath = 'galleryCollection'
+	}
 
 }
 
 prototype(ObisConcept.NeosGallery:GalleryItem) < prototype(Neos.Neos:Content) {
 
-  parentIdentifier = ${q(node).closest('[instanceof ObisConcept.NeosGallery:Gallery]').property('_identifier')}
+	image = Neos.Fusion:Tag {
+		tagName = 'img'
+		attributes {
+			src = Neos.Fusion:Case {
+				dummy {
+					condition = ${q(node).property('image') == null && node.context.inBackend}
+					renderer = Neos.Fusion:ResourceUri {
+						path = 'Images/dummy-image.svg'
+						package = 'Neos.Neos'
+					}
+				}
+				default {
+					condition = ${true}
+					renderer = ImageUri {
+						asset = ${q(node).property('image')}
+					}
+				}
+			}
+			rel = ${'gallery-' + q(node).closest('[instanceof ObisConcept.NeosGallery:Gallery]').property('_identifier')}
+			alt = ${q(node).property('title')}
+			title = ${q(node).property('title')}
+			class = 'zoombox img-responsive'
+		}
+	}
+
+	title = Neos.Fusion:Tag {
+		tagName = 'p'
+		attributes.class = 'caption'
+		content = ${q(node).property('title')}
+		@process.edit = ContentElementEditable {
+			property = 'title'
+		}
+
+		@process.wrap = ${'<figcaption>' + value + '</figcaption>'}
+	}
 
 }
