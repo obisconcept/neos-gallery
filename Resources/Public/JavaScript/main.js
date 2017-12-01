@@ -3207,6 +3207,10 @@
             }
             overlay.trigger('zoomboxOverlayHidden');
           });
+        } else if(event.key === 'ArrowLeft' || event.which == 37) {
+          inner.slick('slickPrev');
+        } else if(event.key === 'ArrowRight' || event.which == 39) {
+          inner.slick('slickNext');
         }
       }
 

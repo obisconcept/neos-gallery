@@ -10,7 +10,7 @@
       height: auto;
     }
 
-    figcaption span {
+    figcaption .caption {
       display: block;
       width: 100%;
       text-align: center;
@@ -20,4 +20,8 @@
   .clearfix {
     clear: both;
   }
+}
+
+#zoombox-overlay {
+  background: rgba(0,0,0,0.7);
 }

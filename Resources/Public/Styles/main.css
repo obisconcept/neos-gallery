@@ -146,9 +146,12 @@
     .gallery .gallery-item img {
       width: 100%;
       height: auto; }
-    .gallery .gallery-item figcaption span {
+    .gallery .gallery-item figcaption .caption {
       display: block;
       width: 100%;
       text-align: center; }
   .gallery .clearfix {
     clear: both; }
+
+#zoombox-overlay {
+  background: rgba(0, 0, 0, 0.7); }
