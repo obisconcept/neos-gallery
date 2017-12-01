@@ -96,7 +96,8 @@
   #zoombox-overlay > .zoombox-inner, #zoombox-overlay-temp > .zoombox-inner {
     overflow: hidden;
     margin: 15px;
-    height: calc(100% - 30px); }
+    height: calc(100% - 30px);
+    position: static; }
     @media (min-width: 768px) {
       #zoombox-overlay > .zoombox-inner, #zoombox-overlay-temp > .zoombox-inner {
         margin: 25px 50px;
