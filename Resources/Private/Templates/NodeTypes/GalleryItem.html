@@ -1,32 +1,6 @@
 {namespace neos=Neos\Neos\ViewHelpers}
-{namespace media=Neos\Media\ViewHelpers}
 
 <figure class="gallery-item">
-  <f:if condition="{neos:rendering.live()}">
-    <f:then>
-      <f:if condition="{image}">
-        <f:then>
-          <a href="{media:uri.image(image: image)}" class="swipebox" rel="{parentIdentifier}-gallery" title="{title}">
-        </f:then>
-        <f:else>
-          <a>
-        </f:else>
-      </f:if>
-    </f:then>
-    <f:else>
-      <a>
-    </f:else>
-  </f:if>
-  <f:if condition="{image}">
-    <f:then>
-      <img src="{media:uri.image(image: image)}" title="{title}" alt="{title}" />
-    </f:then>
-    <f:else>
-      <img src="{f:uri.resource(package: 'Neos.Neos', path: 'Images/dummy-image.svg')}" title="Dummy image" alt="Dummy image" />
-    </f:else>
-  </f:if>
-  <figcaption>
-    {neos:contentElement.editable(property: 'title', tag: 'span')}
-  </figcaption>
-  </a>
+  {image -> f:format.raw()}
+  {title -> f:format.raw()}
 </figure>
