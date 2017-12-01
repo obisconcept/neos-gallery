@@ -16,6 +16,6 @@
     "package.json"
   ],
   "dependencies": {
-    "zoombox.js": "^1.3.4"
+    "zoombox.js": "^1.3.7"
   }
 }
