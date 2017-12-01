@@ -3033,7 +3033,7 @@
     enableAutoplay: false,
     enforceChaining: false,
     fadeDuration: 300,
-    ignoreInputOnMove: false,
+    ignoreInputOnMove: true,
     imageClass: 'zoombox-image',
     innerClass: 'zoombox-inner',
     listenKeys: true,
