@@ -2,14 +2,14 @@
 
 <style>
   .gallery .gallery-item {
-    width: calc(100% / {itemsXs});
+    width: calc(99% / {itemsXs});
   }
   .gallery .gallery-item:nth-of-type({itemsXs}n + 1) {
     clear: left;
   }
   @media (min-width: 768px) {
     .gallery .gallery-item {
-      width: calc(100% / {itemsSm});
+      width: calc(99% / {itemsSm});
     }
     .gallery .gallery-item:nth-of-type({itemsXs}n + 1) {
       clear: none;
@@ -20,7 +20,7 @@
   }
   @media (min-width: 992px) {
     .gallery .gallery-item {
-      width: calc(100% / {itemsMd});
+      width: calc(99% / {itemsMd});
     }
     .gallery .gallery-item:nth-of-type({itemsXs}n + 1),
     .gallery .gallery-item:nth-of-type({itemsSm}n + 1) {
@@ -32,7 +32,7 @@
   }
   @media (min-width: 1200px) {
     .gallery .gallery-item {
-      width: calc(100% / {itemsLg});
+      width: calc(99% / {itemsLg});
     }
     .gallery .gallery-item:nth-of-type({itemsXs}n + 1),
     .gallery .gallery-item:nth-of-type({itemsSm}n + 1),
